@@ -1,0 +1,38 @@
+body {
+    background-color: #cce6ff; /* Light blue */
+  }
+  
+  .navbar {
+    background-color: #d2b48c; /* Tan color */
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: #333333; /* Light charcoal color */
+    font-weight: bold; /* Bold text */
+  }
+  
+  .profile-card {
+    background-image: url('images/stars.webp');
+    background-size: cover;
+    background-position: center;
+    width: 300px; /* 5:4 aspect ratio */
+    height: 240px;
+    margin: 0 auto; /* Center horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  
+  .profile-card img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .blog-card {
+    margin-top: 15px;
+  }
+  

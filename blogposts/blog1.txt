@@ -1,0 +1,15 @@
+Blog Post
+Today I am starting my winter break project between semesters. We ( well thats just me actually ) post about web scraping the Star Trek Continuing Comittee, to get the elements of what make the cards they have created to start. This will probably be done with python using BeautifulSoup as I learn it. Then, after we get this information, we will create a database ( also to be on github ) to make our own API to retrieve it. Finally, we will use Javascript to use the API and create a webpage that users can browse the card list dynamically but also maybe add some functionality with card collecting.
+December 16th, 2024
+
+Blog Post
+Second update today. Added in basic bootstrap to this blog. Now onto python. May post excerpts from my code, which will mean I will need to update this blog script for quote blocks... later.
+December 16th, 2024
+
+Blog Post
+Okay, yeah, it is YET another blog I have started and abandoned. Not totally true but yeah I got busy with work and the holidays. So I have save what I have done with my python code for now. I have written some paper designed for what my database would have looked like. But, this project is on hold for now and I may come back when I have spare time/inspiration. School starts again tomorrow ( Januaryd 6th, 2025 ) so I will be busy with that. Gonna be funzo. Lets bring on OOP!
+January 5th, 2025
+
+Blog Post
+Updated after a VERY long break ( well not a break exactly, I was busy with school ) to revamp the public site. It has the resume on it and for now I have moved the projects out of site(pun intended). I think its now better for inclusion in my co-op placment applications!
+April 27th, 2025

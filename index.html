@@ -5,37 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Patrick Cullen's Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #cce6ff; /* Light blue */
-    }
-    .navbar {
-      background-color: #d2b48c; /* Tan color */
-    }    
-    .navbar .navbar-nav .nav-link {
-      color: #333333; /* Light charcoal color */
-      font-weight: bold; /* Bold text */
-    }
-    .profile-card {
-      background-image: url('images/stars.webp');
-      background-size: cover;
-      background-position: center;
-      width: 300px; /* 5:4 aspect ratio */
-      height: 240px;
-      margin: 0 auto; /* Center horizontally */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      cursor: pointer;
-    }
-    .profile-card img {
-      max-width: 90%;
-      max-height: 90%;
-    }
-  </style>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -55,7 +25,7 @@
             <a class="nav-link active" href="#" id="resume-link">My Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Blog(coming soon!)</a>
+            <a class="nav-link active" href="#" id="blog-link">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="mailto:cull0026@algonquinlive.com">Email Me</a>
@@ -90,50 +60,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Custom Script -->
-<script>
-  function loadResume() {
-    const mainContent = document.getElementById('main-content');
-    mainContent.innerHTML = `
-      <div class="card shadow">
-        <div class="card-body">
-          <h5 class="card-title">My Resume</h5>
-          <iframe src="files/Resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
-        </div>
-      </div>
-    `;
-  }
-
-  function loadHome() {
-    const mainContent = document.getElementById('main-content');
-    mainContent.innerHTML = `
-      <h1 class="text-center">Welcome to Patrick Cullen's Portfolio</h1>
-
-      <div class="profile-card mt-4" id="profile-card">
-        <img src="images/GreetingProfile.JPG" alt="Patrick Cullen Profile Picture">
-      </div>
-    `;
-
-    // Reattach event listener to profile card after reloading home screen
-    document.getElementById('profile-card').addEventListener('click', function() {
-      loadResume();
-    });
-  }
-
-  // Event Listeners
-  document.getElementById('resume-link').addEventListener('click', function(event) {
-    event.preventDefault();
-    loadResume();
-  });
-
-  document.getElementById('profile-card').addEventListener('click', function() {
-    loadResume();
-  });
-
-  document.getElementById('home-link').addEventListener('click', function(event) {
-    event.preventDefault();
-    loadHome();
-  });
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
