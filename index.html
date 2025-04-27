@@ -1,54 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrick Cullen - Resume ( AI Generated Web Index )</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrick Cullen's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #cce6ff; /* Light blue */
+    }
+    .navbar {
+      background-color: #d2b48c; /* Tan color */
+    }    
+    .navbar .navbar-nav .nav-link {
+      color: #333333; /* Light charcoal color */
+      font-weight: bold; /* Bold text */
+    }
+    .profile-card {
+      background-image: url('images/stars.webp');
+      background-size: cover;
+      background-position: center;
+      width: 300px; /* 5:4 aspect ratio */
+      height: 240px;
+      margin: 0 auto; /* Center horizontally */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+    .profile-card img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+  </style>
 </head>
-<body class="bg-light">
-    <div class="container mt-5">
-        <h1 class="text-center">Patrick Cullen - Resume</h1>
-        <div id="resumeCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card p-4">
-                        <h3>Education</h3>
-                        <p><strong>Internet Application Web Development Diploma</strong> (Sept 2024 - Present)</p>
-                        <p>Algonquin College - Ottawa</p>
-                        <p>Dean’s Honour List; GPA 3.97 / 4.0</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card p-4">
-                        <h3>Summary of Qualifications</h3>
-                        <p>Programming Languages: C/C++, C#, Java, HTML, CSS, JavaScript, SQL</p>
-                        <p>Operating Systems: Windows, Linux (Ubuntu/Debian), MacOS</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card p-4">
-                        <h3>Work Experience</h3>
-                        <p><strong>Worker - Books on Beechwood</strong> (August 2024 - Present)</p>
-                        <p>Managed inventory and customer needs.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card p-4">
-                        <h3>Projects</h3>
-                        <p><strong>Star Trek Card Game Database</strong> (November 2024 - Present)</p>
-                        <p>Built a public database API using Python, SQL, and JavaScript.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#resumeCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#resumeCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#" id="home-link">Patrick Cullen</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="d-flex w-100 justify-content-between">
+        <!-- Left links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" id="resume-link">My Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Blog(coming soon!)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:cull0026@algonquinlive.com">Email Me</a>
+          </li>
+        </ul>
+
+        <!-- Right links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pokedex Project(n/a)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">STCCG Project(n/a)</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container my-5" id="main-content">
+  <h1 class="text-center">Welcome to Patrick Cullen's Portfolio</h1>
+
+  <!-- Profile Card -->
+  <div class="profile-card mt-4" id="profile-card">
+    <img src="images/GreetingProfile.JPG" alt="Patrick Cullen Profile Picture">
+  </div>
+</div>
+
+<!-- Bootstrap JS (for navbar toggling) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom Script -->
+<script>
+  function loadResume() {
+    const mainContent = document.getElementById('main-content');
+    mainContent.innerHTML = `
+      <div class="card shadow">
+        <div class="card-body">
+          <h5 class="card-title">My Resume</h5>
+          <iframe src="/files/Resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
+        </div>
+      </div>
+    `;
+  }
+
+  function loadHome() {
+    const mainContent = document.getElementById('main-content');
+    mainContent.innerHTML = `
+      <h1 class="text-center">Welcome to Patrick Cullen's Portfolio</h1>
+
+      <div class="profile-card mt-4" id="profile-card">
+        <img src="images/GreetingProfile.JPG" alt="Patrick Cullen Profile Picture">
+      </div>
+    `;
+
+    // Reattach event listener to profile card after reloading home screen
+    document.getElementById('profile-card').addEventListener('click', function() {
+      loadResume();
+    });
+  }
+
+  // Event Listeners
+  document.getElementById('resume-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    loadResume();
+  });
+
+  document.getElementById('profile-card').addEventListener('click', function() {
+    loadResume();
+  });
+
+  document.getElementById('home-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    loadHome();
+  });
+</script>
+
 </body>
 </html>
